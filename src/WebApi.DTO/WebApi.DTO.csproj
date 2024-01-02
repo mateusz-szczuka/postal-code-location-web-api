@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Messeges\" />
+    <None Remove="Models\" />
+    <None Remove="Messeges\Abstractions\" />
+    <None Remove="Messeges\Requests\" />
+    <None Remove="Models\Externals\" />
+    <None Remove="Models\Externals\Zippo\" />
+    <None Remove="Messeges\Responses\Externals\" />
+    <None Remove="Messeges\Responses\Externals\Zippo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Messeges\" />
+    <Folder Include="Models\" />
+    <Folder Include="Messeges\Abstractions\" />
+    <Folder Include="Messeges\Requests\" />
+    <Folder Include="Models\Externals\" />
+    <Folder Include="Models\Externals\Zippo\" />
+    <Folder Include="Messeges\Responses\Externals\" />
+    <Folder Include="Messeges\Responses\Externals\Zippo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+</Project>
